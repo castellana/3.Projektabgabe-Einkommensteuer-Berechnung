@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styleEN.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Dosis:wght@400;500;700&family=Exo:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap');
+    </style>
+</head>
+<body>
+    <form action="return false">   
+        <fieldset>
+            <legend>Income tax</legend>
+            <h1>Calculation App</h1>
+
+            <section class="year-section">
+                <h2>Year</h2>
+                <select id="year">
+                    <option value="2020" selected>2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>Annual salary to declare</h2>
+                    <div class="income-blocks">
+                        <div class="block1">
+                            <div>
+                                <input type="radio" name="singToge" id="single" value="single" checked>
+                                <label for="single" class="title-label">Single person</label>
+                            </div>
+
+                            <div>
+                                <input type="number" placeholder="person1" required id="singleSalary">
+                                <label>Euros</label>
+                            </div>
+                        </div>
+
+
+                        <div class="block2">
+                            <div>
+                                <input type="radio" name="singToge" id="together" value="together">
+                                <label for="together"class="title-label">Joint Declaration</label>
+                            </div>
+
+                            <div>
+                                <input type="number" placeholder="person1" id="firstSalary" required> <label>Euros</label>
+                            </div>
+
+                            <div>
+                                <input type="number" placeholder="person2" id="secondSalary" required>
+                                <label>Euros</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <input type="button" class="button" value="Calculate" onclick="calculate()">
+
+                <div id="result"></div>
+            </section>
+        </fieldset>
+    </form>
+
+    <script src="assets/js/mainEN.js"></script>
+</body>
+</html>

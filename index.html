@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Lev3_4 JS Einkommensteuer-Berechnungs-App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Dosis:wght@400;500;700&family=Exo:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap');
+    </style>
+
+</head>
+<body>
+    <form action="return false">   
+        <fieldset>
+            <legend>Berechnungs-App</legend>
+            <h1>Einkommensteuer</h1>
+            
+            <section class="jahr-section">
+                <h2>Jahr</h2>
+                <select id="jahr">
+                    <option value="2020" selected>2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>Zu versteuerndes Jahreseinkommen (Brutto-Lohn)</h2>
+                <div class="einkommen-blocks">
+                    <div class="block1">
+                        <div class="input-label">
+                            <input type="radio" name="grundSplit" id="grundtarif" value="grundtarif" checked>
+                            <label for="grundtarif" class="title-label">Alleinstehende Person</label>
+                        </div>
+
+                        <div>
+                            <input type="number" placeholder="Person Single" id="einkomSingle" required> 
+                            <label>Euro</label>
+                        </div>
+                    </div>
+
+                    <div class="block2">
+                        <div class="input-label">
+                            <input type="radio" name="grundSplit" id="splittingtarif"  value="splittingtarif">
+                            <label for="splittingtarif" class="title-label">Verheiratet/<br>gemeinsam veranlagt</label>
+                        </div>
+
+                        <div>
+                            <input type="number" placeholder="Person 1" id="einkPerson1" required> 
+                            <label>Euro</label>
+                        </div>
+            
+                        <div>
+                            <input type="number" placeholder="Person 2" id="einkPerson2" required>
+                            <label>Euro</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <input type="button" class="button" value="Berechnen" onclick="berechnen()">
+
+            <div id="ergebnis"></div>
+        </fieldset>
+    </form>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
