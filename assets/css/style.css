@@ -68,7 +68,7 @@ a {
 
 .title-label {
     font-weight: 700;
-    font-size: 1.7em;
+    font-size: 1.7rem;
 }
 
 .input-label {
@@ -85,16 +85,19 @@ a {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 1427px) {
+@media only screen and (max-width: 1460px) {
     .block1, .block2{
       padding-top: 3vh;
       width: 100%;
     }
     .title-label {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     #einkomSingle, #einkPerson1 {
         margin-top: 1vh;
+    }
+    p {
+        margin: 1vh;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -108,15 +111,12 @@ a {
     #einkomSingle, #einkPerson1, #einkPerson2 {
         width: 100px;
     }
-    legend, h2 {
+    legend, h2, p {
         font-size: 1.25rem;
     }
     .input-label {
         height: unset;
         width: inherit;
-    }
-    label{
-        font-size: 1rem;
     }
     form {
         width: 100%;
@@ -131,5 +131,11 @@ a {
     }
     h1 {
         margin: 0;
+    }
+    .button {
+        width: 40%;
+    }
+    #ergebnis {
+        width: 40%;
     }
 }
