@@ -87,10 +87,10 @@ a {
 
 @media only screen and (max-width: 1460px) {
     .block1, .block2{
-      padding-top: 3vh;
+      padding-top: 2vh;
       width: 100%;
     }
-    .title-label {
+    .title-label, p {
         font-size: 1.4rem;
     }
     #einkomSingle, #einkPerson1 {
@@ -98,6 +98,7 @@ a {
     }
     p {
         margin: 1vh;
+        padding: 0;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -129,8 +130,12 @@ a {
         font-size: 0.6rem;
         padding-bottom: 5vh;
     }
+    .title-label {
+        font-size: 1.1rem;
+    }
     h1 {
         margin: 0;
+        font-size: 2rem;
     }
     .button {
         width: 40%;
