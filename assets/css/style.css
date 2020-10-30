@@ -28,6 +28,14 @@ h2 {
     font-size: 2rem;
 }
 
+p {
+    font-size: 1.7rem;
+}
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
 .einkommen-blocks {
     display: flex;
     justify-content: space-between;
@@ -43,14 +51,14 @@ h2 {
 #einkomSingle, #einkPerson1, #einkPerson2, #ergebnis{
     color: darkblue;
     font-weight: 700;
-    font-size: 1.1rem;
-    /* width: 70%; */
+    font-size: 1.4rem;
+    width: 70%;
     padding-left: 5%;
     display: inline-block;
     margin-left: 5%;
     height: 4vh;
 }
-#ergebenis {
+#ergebnis {
     width: 50%;
 }
 
@@ -60,7 +68,7 @@ h2 {
 
 .title-label {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.7em;
 }
 
 .input-label {
