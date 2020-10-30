@@ -87,18 +87,21 @@ a {
 
 @media only screen and (max-width: 1460px) {
     .block1, .block2{
-      padding-top: 2vh;
+      padding-top: 0;
       width: 100%;
     }
-    .title-label, p {
-        font-size: 1.4rem;
+    .title-label, p, h2 {
+        font-size: 1.3rem;
     }
     #einkomSingle, #einkPerson1 {
         margin-top: 1vh;
     }
     p {
-        margin: 1vh;
+        margin-top: 1vh;
         padding: 0;
+    }
+    .einkommen-blocks {
+        padding-top: 0;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -106,8 +109,8 @@ a {
         flex-direction: column;
     }
     .block1, .block2{
-      padding-top: 3vh;
-      width: 100%;
+        padding-top: 3vh;
+        width: 100%;
     }
     #einkomSingle, #einkPerson1, #einkPerson2 {
         width: 100px;
