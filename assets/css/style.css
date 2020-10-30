@@ -1,13 +1,9 @@
 * {
     font-family: 'Dosis', sans-serif;
-    /* font-family: 'Exo', sans-serif;
-    font-family: 'Rubik', sans-serif;
-    font-family: 'Open Sans', sans-serif; 
-    font-family: 'Cabin', sans-serif; */
 }
 
-legend {
-    font-size: 2rem;
+legend, h1 {
+    font-size: 2.6rem;
 }
 
 form {
@@ -29,6 +25,7 @@ section {
 h2 {
     margin: 0;
     padding-right: 5%;
+    font-size: 2rem;
 }
 
 .einkommen-blocks {
@@ -38,7 +35,7 @@ h2 {
 }
 
 ::placeholder {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .block1, .block2 {
     width: 45%;
@@ -47,17 +44,23 @@ h2 {
     color: darkblue;
     font-weight: 700;
     font-size: 1.1rem;
-    width: 50%;
+    /* width: 70%; */
     padding-left: 5%;
     display: inline-block;
     margin-left: 5%;
+    height: 4vh;
 }
+#ergebenis {
+    width: 50%;
+}
+
 #einkomSingle, #einkPerson1 {
-margin-top: 5vh;
+    margin-top: 3vh;
 }
+
 .title-label {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 .input-label {
@@ -68,13 +71,13 @@ margin-top: 5vh;
     background: rgb(77, 162, 190);
     color: #fff;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 500;
     width: 30%;
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 961px) {
+@media only screen and (max-width: 1427px) {
     .block1, .block2{
       padding-top: 3vh;
       width: 100%;
