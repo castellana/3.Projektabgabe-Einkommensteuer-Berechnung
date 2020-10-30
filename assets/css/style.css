@@ -107,7 +107,7 @@ a {
         margin-left: 0.2em;
     }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 768px) {
     .einkommen-blocks {
         flex-direction: column;
     }
