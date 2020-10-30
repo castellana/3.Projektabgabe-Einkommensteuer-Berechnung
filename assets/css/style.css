@@ -11,8 +11,9 @@ legend {
 }
 
 form {
-    width: 450px;
+    width: 40%;
     margin: 0 auto;
+    height: 80vh;
 }
 
 section {
@@ -47,12 +48,16 @@ h2 {
     font-weight: 700;
     font-size: 1.1rem;
     width: 50%;
-    padding-left: 10px;
+    padding-left: 5%;
     display: inline-block;
+    margin-left: 5%;
 }
-
+#einkomSingle, #einkPerson1 {
+margin-top: 5vh;
+}
 .title-label {
     font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .input-label {
@@ -64,10 +69,23 @@ h2 {
     color: #fff;
     border: none;
     font-size: 1.1rem;
+    font-weight: 500;
     width: 30%;
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 961px) {
+    .block1, .block2{
+      padding-top: 3vh;
+      width: 100%;
+    }
+    .title-label {
+        font-size: 1rem;
+    }
+    #einkomSingle, #einkPerson1 {
+        margin-top: 1vh;
+    }
+}
 @media only screen and (max-width: 380px) {
     .einkommen-blocks {
         flex-direction: column;
@@ -84,6 +102,7 @@ h2 {
     }
     .input-label {
         height: unset;
+        width: inherit;
     }
     label{
         font-size: 1rem;
@@ -98,5 +117,8 @@ h2 {
         width: 20%;
         font-size: 0.6rem;
         padding-bottom: 5vh;
+    }
+    h1 {
+        margin: 0;
     }
 }

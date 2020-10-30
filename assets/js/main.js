@@ -13,7 +13,9 @@ function berechnen() {
     }
     
     document.getElementById("ergebnis").innerHTML = ESt.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + " €"
+    // document.getElementById("einkomSingle").innerHTML = "0";
 }
+
 function berechnen2020(einkomSingle,einkPerson1,einkPerson2) {
     let zvE;
     grundtarif.checked ? zvE = einkomSingle : zvE = (parseInt(einkPerson1) + parseInt(einkPerson2)) / 2
